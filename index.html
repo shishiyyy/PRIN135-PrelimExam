@@ -4,196 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIN135-PrelimExam</title>
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <!-- Task 1: Link External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
-    <header>
-        <nav>
-            <a href="#profile">Profile</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#education">Education</a> |
-            <a href="#awards">Awards and Achievements</a> |
-            <a href="#contact">Contact Me</a>
-        </nav>
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <img class="photo" src="tehya.jpg" alt="Profile picture of Tehya Shaye M. Reyes">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Tehya Shaye M. Reyes</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639171231234">0917 123 1234</a></li>
+                    <li><a href="mailto:tehya.reyes@example.com">tehya.reyes@example.com</a></li>
+                    <li><a href="https://github.com/shishiyyy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+                <p class="profile">
+                    I am a college student with an interest in web development,
+                    programming, and technology. I enjoy learning new skills,
+                    creating digital projects, and improving my knowledge of
+                    computer-related subjects. I am also a responsible and
+                    hardworking person who enjoys working both independently
+                    and with others.
+                </p>
+            </div>
+
+        </div>
     </header>
 
-    <main>
+    <main class="wrapper">
 
-        <section id="profile">
-            <figure>
-                <img src="tehya.jpg"
-                     alt="Profile photo of Tehya Shaye M. Reyes"
-                     width="200"
-                     height="200">
-            </figure>
-
-            <h1>Tehya Shaye M. Reyes</h1>
-
-            <p>
-                <a href="mailto:tehya.reyes@example.com">
-                    tehya.reyes@example.com
-                </a>
-                |
-                <a href="tel:+639171231234">
-                    0917 123 1234
-                </a>
-                |
-                <a href="https://github.com/shishiyyy"target="_blank">profile.github.com</a>                
-                </a>
-            </p>
-
-            <p>
-                I am a college student with an interest in web development,
-                programming, and technology. I enjoy learning new skills,
-                creating digital projects, and improving my knowledge of
-                computer-related subjects. I am also a responsible and
-                hardworking person who enjoys working both independently
-                and with others.
-            </p>
-        </section>
-
-        <section id="skills">
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
             <h2>Skills</h2>
-
-            <ul>
-                <li>HTML and Web Page Development</li>
+            <ul class="skill-list">
+                <li>HTML & Web Page Development</li>
                 <li>Basic CSS</li>
                 <li>Basic JavaScript</li>
-                <li>Git and GitHub</li>
+                <li>Git & GitHub</li>
                 <li>Problem Solving</li>
-                <li>Communication and Teamwork</li>
+                <li>Communication & Teamwork</li>
             </ul>
         </section>
 
-        <section id="education">
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
             <h2>Education</h2>
 
-            <ol>
-                <li>
-                    <strong>Elementary Education</strong><br>
-                    Completed elementary education with good academic standing.
-                </li>
+            <div class="entry">
+                <span class="entry-year">Present</span>
+                <h3>College Education</h3>
+                <p class="entry-school">Pursuing a college degree focused on technology, programming, and web development.</p>
+            </div>
 
-                <li>
-                    <strong>Junior High School</strong><br>
-                    Completed junior high school education and participated
-                    in school activities.
-                </li>
+            <div class="entry">
+                <span class="entry-year">Completed</span>
+                <h3>Senior High School</h3>
+                <p class="entry-school">Focus on technology and computer-related subjects.</p>
+            </div>
 
-                <li>
-                    <strong>Senior High School</strong><br>
-                    Completed senior high school with an interest in
-                    technology and computer-related subjects.
-                </li>
+            <div class="entry">
+                <span class="entry-year">Completed</span>
+                <h3>Junior High School</h3>
+                <p class="entry-school">Participated in school activities and programs.</p>
+            </div>
 
-                <li>
-                    <strong>College Education</strong><br>
-                    Currently pursuing a college degree with a focus on
-                    technology, programming, and web development.
-                </li>
-
-                <li>
-                    <strong>Basic Web Development Training</strong><br>
-                    Completed introductory training in HTML, CSS,
-                    and website development.
-                </li>
-            </ol>
+            <div class="entry">
+                <span class="entry-year">Completed</span>
+                <h3>Elementary Education</h3>
+                <p class="entry-school">Completed elementary education with good academic standing.</p>
+            </div>
         </section>
 
-        <section id="awards">
-            <h2>Awards and Achievements</h2>
-
-            <ol>
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
                 <li>
-                    <strong>Academic Recognition</strong><br>
-                    Received recognition for maintaining good academic
-                    performance.
+                    <strong>Academic Recognition</strong> - Received recognition for maintaining good academic performance.
                 </li>
-
                 <li>
-                    <strong>School Activity Participation</strong><br>
-                    Actively participated in school programs and
-                    extracurricular activities.
+                    <strong>School Activity Participation</strong> - Actively participated in school programs and extracurricular activities.
                 </li>
-
                 <li>
-                    <strong>Web Development Project</strong><br>
-                    Successfully completed an introductory HTML
-                    website project.
+                    <strong>Web Development Project</strong> - Successfully completed an introductory HTML website project.
                 </li>
-
                 <li>
-                    <strong>Programming Training Completion</strong><br>
-                    Completed basic programming and web development
-                    training activities.
+                    <strong>Programming Training Completion</strong> - Completed basic programming and web development training activities.
                 </li>
-
                 <li>
-                    <strong>Teamwork Achievement</strong><br>
-                    Successfully contributed to collaborative academic
-                    projects and group activities.
+                    <strong>Teamwork Achievement</strong> - Successfully contributed to collaborative academic projects and group activities.
                 </li>
-                <li>GitHub Project Collaborator 2026</li>
-            </ol>
+                <li>
+                    <strong>GitHub Project Collaborator</strong> - 2026
+                </li>
+            </ul>
         </section>
 
-        <section id="contact">
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
             <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Tehya Shaye" maxlength="25" required autocomplete="name">
+                    </div>
 
-            <form action="#" method="post">
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tehyashaye@email.com" maxlength="25" required autocomplete="email">
+                    </div>
+                </div>
 
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text"
-                           id="name"
-                           name="name"
-                           placeholder="Tehya Shaye"
-                           maxlength="25"
-                           required
-                           autocomplete="name">
-                </p>
-
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           placeholder="tehyashaye@email.com"
-                           maxlength="25"
-                           required
-                           autocomplete="email">
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message"
-                              name="message"
-                              rows="6"
-                              cols="40"
-                              placeholder="Enter your message here."
-                              maxlength="255"
-                              required></textarea>
-                </p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message here." maxlength="255" required></textarea>
 
                 <button type="submit">Contact Me</button>
-
             </form>
         </section>
 
     </main>
 
-    <footer>
-        <nav>
-            <a href="#profile">Profile</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#education">Education</a> |
-            <a href="#awards">Awards and Achievements</a> |
-            <a href="#contact">Contact Me</a>
-        </nav>
-
-        <p>&copy; 2026 Tehya Shaye M. Reyes</p>
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Tehya Shaye M. Reyes &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
     </footer>
 
 </body>
